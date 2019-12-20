@@ -1,35 +1,4 @@
-/* 
-.container {
-    position: fixed;
-    background-color: #ffffff;
-    border-color: #dddddd;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 25px;
-    width: 360px;
-    top: 200px; right: 300px; left: 300px; 
-    
-}
 
-
-
-.links {
-    position: relative;
-    float: right;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 30px;
-    top: 30px;
-}
-
-.about-me {
-    color: #4aaaa5;
-    font-family: Georgia, 'Times New Roman', Times, serif
-}
-
-.footer {
-    background-color: #666666;
-    margin-bottom: 0px;
-    height: 100px;
-} */
 
 /* 
 Teal color (used for headings and backgrounds): `#4aaaa5`
@@ -79,12 +48,17 @@ nav {
     text-align: center;
     font-size: normal; 
     display: inline-block;
+    position: relative;
+    
     
 }
 
 .name h1 {
     margin-top: 25%;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    position: relative;
+    
 }
 
 .links {
@@ -95,16 +69,20 @@ nav {
     right: 10px;
     /* top: calc(50%); */
     height: 100%;
-    background-color: blue;
+    background-color:green;
 }
 
 .links ul {
     background-color:green;
-    margin-top: 25%;
+    
 }
 
 .links li {
     display: inline-block;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    
 }
 
 main {
@@ -114,7 +92,7 @@ main {
 
 }
 
-.about-me-container {
+.about-me-container, .contact-me-container {
     width: 960px;
     height: 70%;
     top: 50px;
@@ -124,17 +102,19 @@ main {
     
 }
 
-.about-me-header {
+.about-me-header, #contact-me-header {
     background-color: #ffffff;
     height: 10%;
+    
 }
 
 
-.about-me {
+.about-me, #contact-me {
     color: #4aaaa5;
+    vertical-align: 50%;
 }
 
-.about-me-text-box {
+.about-me-text-box, #contact-me-text-box {
     background-color:  lightblue;
     height: 90%;
     position: relative;
@@ -162,4 +142,68 @@ img {
 footer {
     background-color:#666666;
     height: 10%;
+    text-align: center;
+    color: white;
+    font-size: normal;
+
+}
+
+* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea, .name, .email, .message {
+  width: 960px;
+  padding: 12px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;  
+}
+
+.your-name {
+    width: 960px;
+}
+
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: large;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+  max-width: 960px;
+  font-size: large;
+}
+
+
+.message {
+  border-radius: 5px;
+  background-color: red;
+  padding: 20px;
+  max-width: 960px;
+}
+
+.delaware {
+    padding: 20px;
+    float: left;
+}
+
+.paraguay {
+    padding: 20px;
+    float: left;
+}
+
+.russia {
+
+}
+
+.peru {
+
 }
