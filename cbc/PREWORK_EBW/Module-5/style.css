@@ -1,0 +1,47 @@
+
+.title-1 {
+	text-align: center;
+}
+
+
+.red {
+	/* font-style: italic; */
+	color: red;
+}
+
+.blue {
+	color: blue
+}
+
+.green {
+	color: green
+}
+
+.big-text {
+	font-size: xx-large;
+}
+
+.tiny-text {
+	font-size: x-small;
+}
+	
+.font-style1 {
+	font-family: cursive;
+}
+
+.title-2 {
+	text-align: center;
+}
+
+.orange {
+	color: orange;
+}
+
+.bold {
+	font-weight: bold; 
+}
+
+.styledFont {
+	color: green
+}
+

@@ -1,0 +1,32 @@
+
+body {
+	/* box-sizing: border-box; */
+	margin: 0;
+	/* padding: 0; */
+}
+
+p {
+	font-size: 32px;
+}
+
+h2 {
+	background-color: aqua;
+}
+
+.songs {
+	font-style: italic;
+	color: red;
+}
+
+.bio {
+	font-size: 32px;
+}
+
+p {
+	font-size: 28px;
+}
+
+.empty {
+	background: red;
+	height: 20px;
+}
