@@ -7,169 +7,168 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trivia-Game</title>
     <link rel="stylesheet" href="assets/css/style.css">
-</head>
-
-<body>
     <!-- jQuery -->
-    <script type="text/javascript" sr c="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Script -->
     <script type="text/javascript"></script>
     <script src="assets/javascript/app.js"></script>
     <audio id="myAudio">
         <source src="assets/javascript/ding-sound-effect_2.mp3" type="audio/mpeg">
     </audio>
-    <br>
-    <div class="Trivia-game" id="quiz"></div>
-    <div class="Trivia-game">
-    <p id="question1">Question 1) What year was the U.S. Constitution issued?</p>
-    <text id="optionsQuestion1">
-        <input type="radio" , name="radio1" id=option1.1, value=radio1>
-        <label for="radio1.1">1765</label> &emsp;
+</head>
 
-        <input type="radio" , name="radio1" id=option1.2, value=radio1>
-        <label for="radio1.2">1776</label> &emsp;
+<h1>U.S. History and Geography Quiz!</h1>
+<hr>
+ 
+<body>
+    <form id="quiz" name="quiz">
+        <fieldset>
 
-        <input type="radio" , name="radio1" id=option1.3, value=radio1>
-        <label for="radio1.3">1787</label> &emsp;
+            <p id="question1">Question 1) What year was the U.S. Constitution issued?</p>
+            <text id="optionsQuestion1"> 
+                <label for="option 1.1"><input type="radio" , name="radio1" value="0">1765</label> &emsp;
 
-        <input type="radio" , name="radio1" id=option1.4, value=radio1>
-        <label for="radio1.4">1791</label> &emsp;
-        <!-- 1.3 is the answer -->
-        <br>
-        <br>
-        <hr>
+                <label for="option 1.2"><input type="radio" , name="radio1"  value="0">1776</label> &emsp;
 
-        <p id="question2">Question 2) How many colonies were there before 1787?</p>
-        <text id="optionsQuestion2">
-            <input type="radio" , name="radio2" id=option2.1, value=radio2>
-            <label for="radio2.1">10</label> &emsp;
+                <label for="option 1.3"><input type="radio" , name="radio1"  value="1">1787</label> &emsp;
 
-            <input type="radio" , name="radio2" id=option2.2, value=radio2>
-            <label for="radio2.2">11</label> &emsp;
-
-            <input type="radio" , name="radio2" id=option2.3, value=radio2>
-            <label for="radio2.3">12</label> &emsp;
-
-            <input type="radio" , name="radio2" id=option2.4, value=radio2>
-            <label for="radio2.4">13</label> &emsp;
-
-            <!-- 2.4 is the answer -->
-            <br>
-            <br>
-            <hr>
-
-            <p id="question3">Question 3) Which president greatly expanded the U.S. territory in the early 1800's by
-                means of the Louisiana Purchase?
-            </p>
-            <text id="optionsQuestion3">
-                <input type="radio" , name="radio3" id=option3.1, value=radio3>
-                <label for="radio3.1">James Madison</label> &emsp;
-
-                <input type="radio" , name="radio3" id=option3.2, value=radio3>
-                <label for="radio3.2">Thomas Jefferson</label> &emsp;
-
-                <input type="radio" , name="radio3" id=option3.3, value=radio3>
-                <label for="radio3.3">Andrew Jackson</label> &emsp;
-
-                <input type="radio" , name="radio3" id=option3.4, value=radio3>
-                <label for="radio3.4">Abraham Lincoln</label> &emsp;
-
-                <!-- 3.2 is the answer -->
+                <label for="option 1.4"><input type="radio" , name="radio1"  value="0">1791</label> &emsp;
+                <!-- 1.3 is the answer -->
                 <br>
                 <br>
                 <hr>
 
-                <p id="question4">Question 4) Who went on to explore this newly acquired territory?</p>
-                <text id="optionsQuestion4">
-                    <input type="radio" , name="radio4" id=option4.1, value=radio4>
-                    <label for="radio4.1">Bonnie & Clyde </label> &emsp;
+                <p id="question2">Question 2) How many colonies were there before 1787?</p>
+                <text id="optionsQuestion2">
+                    <label for="option 2.1"><input type="radio" , name="radio2"  value="0">10</label>
+                    &emsp;
 
-                    <input type="radio" , name="radio4" id=option4.2, value=radio4>
-                    <label for="radio4.2">Tom & Jerry</label> &emsp;
+                    <label for="option 2.1"><input type="radio" , name="radio2"  value="0">11</label>
+                    &emsp;
 
-                    <input type="radio" , name="radio4" id=option4.3, value=radio4>
-                    <label for="radio4.3">Lewis & Clark</label> &emsp;
+                    <label for="option 2.1"><input type="radio" , name="radio2"  value="0">12</label>
+                    &emsp;
 
-                    <input type="radio" , name="radio4" id=option4.4, value=radio4>
-                    <label for="radio4.4">Tweedledum & Tweedledee</label> &emsp;
+                    <label for="option 2.1"><input type="radio" , name="radio2"  value="1">13</label>
+                    &emsp;
 
-                    <!-- 4.3 is the answer -->
                     <br>
                     <br>
                     <hr>
 
-                    <p id="question5">Question 5) Name one of the four states that borders Mexico.</p>
-                    <text id="optionsQuestion5">
-                        <input type="radio" , name="radio5" id=option5.1, value=radio5>
-                        <label for="radio5.1">Texas </label> &emsp;
+                    <p id="question3">Question 3) Which president greatly expanded the U.S. territory in the early
+                        1800's by
+                        means of the Louisiana Purchase?
+                    </p>
+                    <text id="optionsQuestion3">
+                        <label for="option 3.1"><input type="radio" , name="radio3"  value="0">James
+                            Madison</label> &emsp;
 
-                        <input type="radio" , name="radio5" id=option5.2, value=radio5>
-                        <label for="radio5.2">Florida </label> &emsp;
+                        <label for="option 3.2"><input type="radio" , name="radio3"  value="1">Thomas
+                            Jefferson</label> &emsp;
 
-                        <input type="radio" , name="radio5" id=option5.3, value=radio5>
-                        <label for="radio5.3">Colorado </label> &emsp;
+                        <label for="option 3.3"><input type="radio" , name="radio3"  value="0">Andrew
+                            Jackson</label> &emsp;
 
-                        <input type="radio" , name="radio5" id=option5.4, value=radio5>
-                        <label for="radio5.4">Maine</label> &emsp;
+                        <label for="option 3.4"><input type="radio" , name="radio3"  value="0">Abraham
+                            Lincoln</label> &emsp;
 
-                        <!-- 5.1 is the answer -->
+                        <!-- 3.2 is the answer -->
                         <br>
                         <br>
                         <hr>
 
-                        <p id="question6">Question 6) Which town experiences polar night, where it's dark for about
-                            67 days every winter? <br>
-                            (Hint: This is one good reason why few people live there.) </p>
-                        <text id="optionsQuestion6">
-                            <input type="radio" , name="radio6" id=option6.1, value=radio6>
-                            <label for="radio6.1">Minneapolis, Minnesota </label> &emsp;
+                        <p id="question4">Question 4) Who went on to explore this newly acquired territory?</p>
+                        <text id="optionsQuestion4">
+                            <label for="option 4.1"><input type="radio" , name="radio4"  value="0">
+                                Bonnie & Clyde</label> &emsp;
 
-                            <input type="radio" , name="radio6" id=option6.2, value=radio6>
-                            <label for="radio6.2">Great Falls, Montana </label> &emsp;
+                            <label for="option 4.2"><input type="radio" , name="radio4"  value="0">
+                                Tom & Jerry</label> &emsp;
 
-                            <input type="radio" , name="radio6" id=option6.3, value=radio6>
-                            <label for="radio6.3">Barrow, Alaska </label> &emsp;
+                            <label for="option 4.3"><input type="radio" , name="radio4"  value="1">
+                                Lewis & Clark</label> &emsp;
 
-                            <input type="radio" , name="radio6" id=option6.4, value=radio6>
-                            <label for="radio6.4">Seattle, Washington </label> &emsp;
+                            <label for="option 4.4"><input type="radio" , name="radio4"  value="0">
+                                Tweedledum & Tweedledee</label> &emsp;
 
-                            <!-- 6.3 is the answer -->
+                            <!-- 4.3 is the answer -->
                             <br>
                             <br>
                             <hr>
 
-                            <p id="question7">Question 7) What was the last state to join the U.S.A. (the 50th
-                                state)? </p>
-                            <text id="optionsQuestion7">
-                                <input type="radio" , name="radio7" id=option7.1, value=radio7>
-                                <label for="radio7.1">Arizona </label> &emsp;
+                            <p id="question5">Question 5) Name one of the four states that borders Mexico.</p>
+                            <text id="optionsQuestion5">
+                                <label for="option 5.1"><input type="radio" , name="radio5"  value="1">
+                                    Texas</label> &emsp;
 
-                                <input type="radio" , name="radio7" id=option7.2, value=radio7>
-                                <label for="radio7.2">Hawaii</label> &emsp;
+                                <label for="option 5.2"><input type="radio" , name="radio5"  value="0">
+                                    Florida</label> &emsp;
 
-                                <input type="radio" , name="radio7" id=option7.3, value=radio7>
-                                <label for="radio7.3">Alaska</label> &emsp;
+                                <label for="option 5.3"><input type="radio" , name="radio5"  value="0">
+                                    Colorado</label> &emsp;
 
-                                <input type="radio" , name="radio7" id=option7.4, value=radio7>
-                                <label for="radio7.4">Nevada</label> &emsp; -->
+                                <label for="option 5.4"><input type="radio" , name="radio5"  value="0">
+                                    Maine</label> &emsp;
 
-
-                                <!-- 7.2 is the answer -->
+                                <!-- 5.1 is the answer -->
                                 <br>
                                 <br>
                                 <hr>
-                                <h3>
-                                    <input type="button" name="button" id="btnSubmit" value="Submit for Score"
-                                        onclick="SubmitForScore()">
-                                    &emsp;
-                                    <label for="Score">Score:</label>
-                                    <input type="text" name="Score" id="score">
 
-                                </h3>
+                                <p id="question6">Question 6) Which town experiences polar night, where it's dark for
+                                    about
+                                    67 days every winter? <br>
+                                    (Hint: This is one good reason why few people live there.) </p>
+                                <text id="optionsQuestion6">
+                                    <label for="option 6.1"><input type="radio" , name="radio6"  
+                                        value="0">Minneapolis, Minnesota</label> &emsp;
+                                    <label for="option 6.2"><input type="radio" , name="radio6"  
+                                        value="0">Great Falls, Montana </label> &emsp;    
+                                    <label for="option 6.3"><input type="radio" , name="radio6"  
+                                        value="1">Barrow, Alaska </label> &emsp;
+                                    <label for="option 6.4"><input type="radio" , name="radio6"  
+                                        value="0">Seattle, Washington</label> &emsp;
+                                    <!-- 6.3 is the answer -->
+                                    <br>
+                                    <br>
+                                    <hr>
+
+                                    <p id="question7">Question 7) What was the last state to join the U.S.A. (the 50th
+                                        state)? </p>
+                                    <text id="optionsQuestion7">
+                                        <label for="option 7.1"><input type="radio" , name="radio7"  
+                                            value="0">Arizona</label> &emsp;
+
+                                        <label for="option 7.2"><input type="radio" , name="radio7"  
+                                            value="1">Hawaii</label> &emsp;
+
+                                        <label for="option 7.3"><input type="radio" , name="radio7"  
+                                            value="0">Alaska</label> &emsp;
+
+                                        <label for="option 7.4"><input type="radio" , name="radio7"  
+                                            value="0">Nevada</label> &emsp;
 
 
-                                </div>
+                                        <!-- 7.2 is the answer -->
+                                        <br>
+                                        <br>
+                                        <hr>
+                                        <h1>
+                                            <button type="submit" value="Submit" id="submit">Submit</button>
+        </fieldset>
+    </form>
+    <p>Your score is: <span id="score">____</span></p>
+
+    <!-- <label for="Score">Score:</label>
+                                    <input type="text" name="Score" id="score"> -->
+
+
+
+    </h1>
+
+
+
 
 
 
