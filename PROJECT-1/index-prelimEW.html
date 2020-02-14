@@ -25,6 +25,10 @@
     </div>
   </div>
 
+  <div class="holidayList">
+
+  </div>
+
   <script>
 
     var select = document.getElementById("selectCountry");
@@ -41,46 +45,46 @@
     //   "U.S.A.",
     // ];
     var countryList = [
-        {
-          name: "Australia",
-          code: "au"
-        },
-        {
-          name: "China",
-          code: "cn"
-        },
-        {
-          name: "France",
-          code: "fr"
-        },
-        {
-          name: "Japan",
-          code: "jp"
-        },
-        {
-          name: "Norway",
-          code: "no"
-        },
-        {
-          name: "Peru",
-          code: "pe"
-        },
-        {
-          name: "South Korea",
-          code: "kr"
-        },
-        {
-          name: "Ukraine",
-          code: "ua"
-        },
-        {
-          name: "United Kingdom",
-          code: "gb"
-        },
-        {
-          name: "U.S.A.",
-          code: "us"
-        },
+      {
+        name: "Australia",
+        code: "au"
+      },
+      {
+        name: "China",
+        code: "cn"
+      },
+      {
+        name: "France",
+        code: "fr"
+      },
+      {
+        name: "Japan",
+        code: "jp"
+      },
+      {
+        name: "Norway",
+        code: "no"
+      },
+      {
+        name: "Peru",
+        code: "pe"
+      },
+      {
+        name: "South Korea",
+        code: "kr"
+      },
+      {
+        name: "Ukraine",
+        code: "ua"
+      },
+      {
+        name: "United Kingdom",
+        code: "gb"
+      },
+      {
+        name: "U.S.A.",
+        code: "us"
+      },
 
     ];
     for (var i = 0; i < countryList.length; i++) {
@@ -95,22 +99,28 @@
       console.log("whatever");
       var option = $(this).val();
 
-      var queryURL = "https://calendarific.com/api/v2/holidays?api_key=567ba202f6afebf1ca7e5f2e1e1baa2e1f479225&country="+ option +"&year=2019";
+      var queryURL = "https://calendarific.com/api/v2/holidays?api_key=567ba202f6afebf1ca7e5f2e1e1baa2e1f479225&country=" + option + "&year=2019";
       // var queryURL = "https://calendarific.com/api/v2/holidays?&api_key=baa9dc110aa712sd3a9fa2a3dwb6c01d4c875950dc32vs&country=US&year=2019"
 
+        // $(".content a" ).each(function( index, element ) 
       // Performing our AJAX GET request
       $.ajax({
         url: queryURL,
         method: "GET"
       }).then(function (data) {
-        console.log(data);
+        // console.log(data.response.holidays);
+        data.response.holidays.forEach(holiday => {
+          console.log(holiday);
+          $(".holidayList" ).append(holiday.name)
+        });
       }).catch(function (error) {
         console.log(error);
+       }
+        )
+      
       })
-        ;
-
-    })
   </script>
 </body>
 
 </html>
+             
